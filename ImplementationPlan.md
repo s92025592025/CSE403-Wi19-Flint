@@ -2,7 +2,7 @@
 
 #### Tools
 - JavaParser
-- IntelliJ Plan
+- IntelliJ IDEA
 - Java
 - Gradle
 - JUnit
@@ -11,7 +11,7 @@
 
 - CLI/IDE Adapter
 	- Find file path and send it to parser
-	- Find config file and *create config instance*
+	- Find config file and **create config instance**
 	- Response to file-save; trigger driver
 - Parser
 	- Generate AST to output
@@ -19,6 +19,6 @@
 	- Input: AST
 	- Output: lines, col, msg
 	- Compiler check
-- ConfigFile (FlintConfig.Java)
+- ConfigFile (`FlintConfig.Java`)
 - Rule
-	- runChecks(); need filePath and AST
+	- `runChecks()`; need filePath and AST
