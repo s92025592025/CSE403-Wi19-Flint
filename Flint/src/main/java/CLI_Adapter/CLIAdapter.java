@@ -19,7 +19,7 @@ public class CLIAdapter {
         throw new Exception("Not Yet Implemented");
     }
 
-    private String resultOutput(Collection<Failure> result) throws Exception{
+    private static String resultOutput(Collection<Failure> result) throws Exception{
         throw new Exception("Not Yet Implemented");
     }
 
