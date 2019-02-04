@@ -1,6 +1,7 @@
 package CLI_Adapter;
 
 import flint.FlintConfiguration;
+import flint.LintFailure;
 
 public class CLIAdapter {
     public static void main(String[] args) throws Exception {
@@ -15,11 +16,11 @@ public class CLIAdapter {
         throw new Exception("Not Yet Implemented");
     }
 
-    private static Collection<Failure> run(String fileToLint, FlintConfiguration config) throws Exception{
+    private static Collection<LintFailure> run(String fileToLint, FlintConfiguration config) throws Exception{
         throw new Exception("Not Yet Implemented");
     }
 
-    private static String resultOutput(Collection<Failure> result) throws Exception{
+    private static String resultOutput(Collection<LintFailure> result) throws Exception{
         throw new Exception("Not Yet Implemented");
     }
 
