@@ -6,8 +6,6 @@ import java.io.FileNotFoundException;
 import flint.FlintConfiguration;
 import flint.LintFailure;
 
-import javax.annotation.Nonnull;
-
 public class CLIAdapter {
     /**
      * The function that should be triggered by the command line, this will trigger the
