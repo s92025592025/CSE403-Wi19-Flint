@@ -1,4 +1,4 @@
-package CLI_Adapter;
+package flint;
 
 import java.util.Collection;
 import java.io.FileNotFoundException;
@@ -60,7 +60,7 @@ public class CLIAdapter {
      * @throws NullPointerException - When result is null
      * // Otherexception that will be returned from run
      * */
-    private static String resultOutput(Collection<LintFailure> result) throws Exception{
+    private static void resultOutput(Collection<LintFailure> result) throws Exception{
         throw new Exception("Not Yet Implemented");
     }
 
