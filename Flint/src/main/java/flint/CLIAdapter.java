@@ -55,8 +55,6 @@ public class CLIAdapter {
      *
      * @require result should not be null
      * @param result - The collection of failure results from Driver
-     * @return Returns the output that the user should see on the command line, see the overview
-     *         for detailed output format.
      * @throws NullPointerException - When result is null
      * // Otherexception that will be returned from run
      * */
