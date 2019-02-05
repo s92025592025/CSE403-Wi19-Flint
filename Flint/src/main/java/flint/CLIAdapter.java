@@ -26,11 +26,13 @@ public class CLIAdapter {
      *
      * @param configPath - The path that leads to the FlintConfiguration subclass file.
      * @return Returns the initialized FlintConfiguration subclass if passed in a valid path.
-     * @throws FileNotFoundException - If configPath did not lead to a file.
+     * @throws FileNotFoundException - If configPath did not lead to a Java file.
      * @throws IllegalArgumentException - If the passed in configPath is not a FlintConfiguration subclass.
      * */
     private static FlintConfiguration configInit(String configPath) throws Exception {
-        throw new Exception("Not Yet Implemented");
+        if (!isJava(configPath)) {
+            throw new FileNotFoundException();
+        }
     }
 
     /**
