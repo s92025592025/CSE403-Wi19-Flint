@@ -102,7 +102,7 @@ public class CLIAdapter {
   * @throws FileNotFoundException - If configPath did not lead to a Java file.
   * @throws IllegalArgumentException - If the passed in configPath is not a FlintConfiguration subclass.
   * */
-  private static FlintConfiguration configInit(String configPath) throws Exception {
+  public static FlintConfiguration configInit(String configPath) throws Exception {
     if (!isJava(configPath)) {
       throw new FileNotFoundException();
     }
@@ -116,7 +116,7 @@ public class CLIAdapter {
   * @param filePath - The file path to check.
   * @return Returns the true if the file exists and is a java file. Otherwise false.
   * */
-  private static boolean isJava(String filePath) {
+  public static boolean isJava(String filePath) {
     File file = new File(filePath);
 
     return Pattern.matches(".*\\.java$", filePath) && file.exists();
@@ -129,7 +129,7 @@ public class CLIAdapter {
   * @param config - The configuration to run on flieToLint.
   * // Otherexception that will be returned from run
   * */
-  private static Collection<LintFailure> run(String fileToLint, FlintConfiguration config) throws Exception{
+  public static Collection<LintFailure> run(String fileToLint, FlintConfiguration config) throws Exception{
     return FlintDriver.run(fileToLint, config);
   }
 
@@ -140,7 +140,7 @@ public class CLIAdapter {
   * @param result - The collection of failure results from Driver
   * @throws NullPointerException - When result is null
   * */
-  private static void resultOutput(Collection<LintFailure> result) throws NullPointerException{
+  public static void resultOutput(Collection<LintFailure> result) throws NullPointerException{
     if (result == null) {
       throw new NullPointerException();
     }
