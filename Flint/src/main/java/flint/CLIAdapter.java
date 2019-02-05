@@ -1,7 +1,9 @@
 package flint;
 
+import java.io.File;
 import java.util.Collection;
 import java.io.FileNotFoundException;
+import java.util.regex.Pattern;
 
 import flint.FlintConfiguration;
 import flint.LintFailure;
@@ -36,8 +38,10 @@ public class CLIAdapter {
      * @param filePath - The file path to check.
      * @return Returns the true if the file exists and is a java file. Otherwise false.
      * */
-    private static boolean isJava(String filePath) throws Exception {
-        throw new Exception("Not Yet Implemented");
+    private static boolean isJava(String filePath) {
+        File file = new File(filePath);
+
+        return Pattern.matches(".*\\.java$", filePath) && file.exists();
     }
 
     /**
