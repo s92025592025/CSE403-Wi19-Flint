@@ -3,6 +3,7 @@ package flint;
 import java.io.File;
 import java.util.Collection;
 import java.io.FileNotFoundException;
+import java.util.Iterator;
 import java.util.regex.Pattern;
 
 import flint.FlintConfiguration;
@@ -62,8 +63,20 @@ public class CLIAdapter {
      * @param result - The collection of failure results from Driver
      * @throws NullPointerException - When result is null
      * */
-    private static void resultOutput(Collection<LintFailure> result) throws Exception{
-        throw new Exception("Not Yet Implemented");
+    private static void resultOutput(Collection<LintFailure> result) throws NullPointerException{
+        if (result == null) {
+            throw new NullPointerException();
+        }
+
+        Iterator<LintFailure> failureIt = result.iterator();
+
+        while (failureIt.hasNext()) {
+            LintFailure failure = failureIt.next();
+
+            System.out.println("Line " + failure.getLineStart() + ":" + failure.getLineEnd() + ", "
+                                + "Col " + failure.getColStart() + ":" + failure.getColEnd() + "\n"
+                                + "Message: " + failure.getMessage());
+        }
     }
 
 }
