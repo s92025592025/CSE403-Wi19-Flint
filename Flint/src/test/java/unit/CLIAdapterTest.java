@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -18,7 +19,7 @@ public class CLIAdapterTest {
   @Before
   public void setup() {
     CLI_OUTPUT = new ByteArrayOutputStream();
-    System.setOut(System.out);
+    System.setOut(new PrintStream(CLI_OUTPUT));
   }
 
   @Test
@@ -63,6 +64,6 @@ public class CLIAdapterTest {
     CLIAdapter.resultOutput(result);
     assertEquals("Line 0:1, Col 23:45\n"
                   + "Message: Test 1 Error",
-                  CLI_OUTPUT.toString());
+                  CLI_OUTPUT.toString().trim());
   }
 }
