@@ -23,30 +23,75 @@ public class CLIAdapter {
     if (args.length <= 0) {
     // if no flags were passed in
       System.out.println("Missing required flags, run \"flint -usage\" for details.");
-    } else {
-      Map<String, String> flags = new HashMap<String, String>();
 
-      // setup flags
-      flags.put("-config", null);
-      flags.put("-file-path", null);
+      System.exit(0);
+    }
 
-      int flag_index = 0;
+    FlintConfiguration config = null;
+    Collection<LintFailure> result = null;
+    Map<String, String> flags = new HashMap<String, String>();
 
-      while (flag_index < args.length) {
-        if (flags.containsKey(args[flag_index])) {
-          flags.put(args[flag_index], args[flag_index + 1]);
+    // setup flags
+    flags.put("-config", null);
+    flags.put("-file-path", null);
+
+    int flag_index = 0;
+
+    while (flag_index < args.length) {
+      if (flags.containsKey(args[flag_index])) {
+        flags.put(args[flag_index], args[flag_index + 1]);
+
+        flag_index += 2;
+      } else {
+        if (args[flag_index].equals("-usage")) {
+          System.out.println("Flint -config <Config File Path> -file-path <List of File Paths>");
         } else {
-          if (args[flag_index].equals("-usage")) {
-            System.out.println("Flint -config <Config File Path> -file-path <List of File Paths>");
-          } else {
-            System.out.println("Invalid flag \"" + args[flag_index] +
-                               "\", check doc or run “flint -usage” for details.");
-          }
-
-          return; // end function if user called -usage or invalid flag
+          System.out.println("Invalid flag \"" + args[flag_index] +
+                  "\", check doc or run “flint -usage” for details.");
         }
+
+        return; // end function if user called -usage or invalid flag
       }
     }
+
+    // check if the all the required flags are entered.
+    for (String essentialFlags : flags.keySet()) {
+      if (flags.get(essentialFlags) == null) {
+        System.out.println("Missing required flags, run “flint -usage” for details.");
+
+        return; // end function if user did not fulfill required flags
+      }
+    }
+
+    // check if the flag input is given correctly
+    try {
+      // check config file first
+      config = configInit(flags.get("-config"));
+    } catch (FileNotFoundException e) {
+      System.out.println("config file not exist");
+    } catch (Exception e) {
+      System.out.println("Died from unexpected");
+    } finally {
+      System.exit(0);
+    }
+
+    // check if the file to be lint is a java file
+    if (!isJava(flags.get("-file-path"))) {
+      System.out.println(flags.get("-file-path") + " is not a valid Java file.");
+
+      System.exit(0);
+    }
+
+    // if all input matches requirement, start linting
+    try {
+      result = run(flags.get("-file-path"), config);
+    } catch (Exception e) {
+      // not sure what kind of exceptions will happen
+    } finally {
+      System.exit(0);
+    }
+
+    resultOutput(result);
   }
 
   /**
