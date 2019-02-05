@@ -49,9 +49,10 @@ public class CLIAdapter {
      *
      * @param fileToLint - The file path that leads to a valid and existing Java file.
      * @param config - The configuration to run on flieToLint.
+     * // Otherexception that will be returned from run
      * */
     private static Collection<LintFailure> run(String fileToLint, FlintConfiguration config) throws Exception{
-        throw new Exception("Not Yet Implemented");
+        return FlintDriver.run(fileToLint, config);
     }
 
     /**
@@ -60,7 +61,6 @@ public class CLIAdapter {
      * @require result should not be null
      * @param result - The collection of failure results from Driver
      * @throws NullPointerException - When result is null
-     * // Otherexception that will be returned from run
      * */
     private static void resultOutput(Collection<LintFailure> result) throws Exception{
         throw new Exception("Not Yet Implemented");
