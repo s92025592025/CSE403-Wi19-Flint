@@ -71,8 +71,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="532">
-                  <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+                <state relative-caret-position="413">
+                  <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#447#448#0" expanded="true" />
@@ -209,7 +209,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549396869388" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549398006869" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -393,24 +393,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CLIAdapterTest - 2019.02.05 at 11h 54m 00s.xml">
-      <configuration name="CLIAdapterTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_resultOutputHasResultTest - 2019.02.05 at 11h 55m 03s.xml">
-      <configuration name="CLIAdapterTest.resultOutputHasResultTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_resultOutputHasResultTest - 2019.02.05 at 11h 56m 32s.xml">
-      <configuration name="CLIAdapterTest.resultOutputHasResultTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_resultOutputHasResultTest - 2019.02.05 at 11h 58m 35s.xml">
-      <configuration name="CLIAdapterTest.resultOutputHasResultTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_resultOutputHasResultTest - 2019.02.05 at 11h 58m 53s.xml">
-      <configuration name="CLIAdapterTest.resultOutputHasResultTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_resultOutputHasResultTest - 2019.02.05 at 11h 59m 14s.xml">
-      <configuration name="CLIAdapterTest.resultOutputHasResultTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CLIAdapterTest_resultOutputNoResultTest - 2019.02.05 at 11h 59m 40s.xml">
       <configuration name="CLIAdapterTest.resultOutputNoResultTest" configurationId="JUnit" />
     </history-entry>
@@ -422,6 +404,24 @@
     </history-entry>
     <history-entry file="CLIAdapterTest_resultOutputHasResultTest - 2019.02.05 at 12h 00m 26s.xml">
       <configuration name="CLIAdapterTest.resultOutputHasResultTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.05 at 12h 01m 11s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.05 at 12h 14m 26s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.05 at 12h 15m 59s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.05 at 12h 17m 11s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.05 at 12h 18m 45s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.05 at 12h 18m 59s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -508,10 +508,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flint/CLIAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="150" column="45" lean-forward="true" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isJava#0;class#CLIAdapter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+        <state relative-caret-position="413">
+          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#447#448#0" expanded="true" />
@@ -522,17 +533,6 @@
             <element signature="e#734#735#0" expanded="true" />
             <element signature="e#1204#1217#0" expanded="true" />
             <element signature="e#1437#1450#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flint/CLIAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="150" column="45" lean-forward="true" selection-start-line="150" selection-start-column="45" selection-end-line="150" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#isJava#0;class#CLIAdapter#0" />
           </folding>
         </state>
       </provider>

@@ -65,5 +65,15 @@ public class CLIAdapterTest {
     assertEquals("Line 0:1, Col 23:45\n"
                   + "Message: Test 1 Error",
                   CLI_OUTPUT.toString().trim());
+
+    result.add(new LintFailure(123, 125, 64, 78, "Test 2 Error"));
+
+    CLI_OUTPUT.reset();
+    CLIAdapter.resultOutput(result);
+    assertEquals("Line 0:1, Col 23:45\n"
+                    + "Message: Test 1 Error\r\n"
+                    + "Line 123:125, Col 64:78\n"
+                    + "Message: Test 2 Error",
+                  CLI_OUTPUT.toString().trim());
   }
 }
