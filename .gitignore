@@ -97,6 +97,8 @@ out/
 
 # Package Files #
 *.jar
+!*testConfig.jar
+!*wrongConfigClass.jar
 *.war
 *.nar
 *.ear
