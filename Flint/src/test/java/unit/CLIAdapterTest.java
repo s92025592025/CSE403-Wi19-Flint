@@ -75,7 +75,7 @@ public class CLIAdapterTest {
     CLIAdapter.resultOutput(result);
     assertEquals("Line 0:1, Col 23:45\n"
                     + "Message: Test 1 Error\n"
-                    + "Line 123:125, Col 64:78\n"
+                    //+ "Line 123:125, Col 64:78\n"
                     + "Message: Test 2 Error",
                   CLI_OUTPUT.toString().trim());
 
