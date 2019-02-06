@@ -66,9 +66,9 @@ public class CLIAdapterTest {
                   + "Message: Test 1 Error",
                   CLI_OUTPUT.toString().trim());
 
-    /* // Commenting this out since we do not have a unified testing platform,
-       // \r\n and \n depends on the system and will cause false negative testing
-       // result
+     // Commenting this out since we do not have a unified testing platform,
+     // \r\n and \n depends on the system and will cause false negative testing
+     // result
     result.add(new LintFailure(123, 125, 64, 78, "Test 2 Error"));
 
     CLI_OUTPUT.reset();
@@ -78,6 +78,6 @@ public class CLIAdapterTest {
                     + "Line 123:125, Col 64:78\n"
                     + "Message: Test 2 Error",
                   CLI_OUTPUT.toString().trim());
-    */
+
   }
 }
