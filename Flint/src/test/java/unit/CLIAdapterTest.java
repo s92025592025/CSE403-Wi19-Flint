@@ -85,7 +85,7 @@ public class CLIAdapterTest {
   @Test
   public void FlintConfigurationSuccessTest() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "D:\\UWGDrive\\UW GDrive\\CSE 403 A\\CSE403-Wi19-Flint\\Flint\\src\\main\\java\\flint\\";
+    String configPath = "src\\main\\java\\flint\\";
 
     configObj = CLIAdapter.configInit(configPath);
 

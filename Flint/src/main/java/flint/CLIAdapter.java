@@ -101,21 +101,27 @@ public class CLIAdapter {
   *
   * @param configPath - The path that leads to the FlintConfiguration subclass file.
   * @return Returns the initialized FlintConfiguration subclass if passed in a valid path.
-  * @throws FileNotFoundException - If configPath did not lead to a Java file.
+  * @throws FileNotFoundException - If configPath did not lead to a jar.
   * @throws IllegalArgumentException - If the passed in configPath is not a FlintConfiguration subclass.
   * */
   public static FlintConfiguration configInit(String configPath) throws Exception {
+    String realConfigPath = configPath;
+
+    if (realConfigPath.charAt(0) != '\\' && realConfigPath.charAt(0) != '/') {
+      // if not passing absolute path
+      realConfigPath = "file://" + System.getProperty("user.dir") + "/" + realConfigPath;
+    } else {
+      realConfigPath = "file://" + realConfigPath;
+    }
+
     URLClassLoader urlClassLoader = URLClassLoader.newInstance(new URL[] {
             new URL(
-                    "file://" + System.getProperty("user.dir") + "\\src\\main\\java\\flint\\testConfig.jar"
+                    realConfigPath
             )
     });
 
-    System.out.println("Working Directory = " +
-            System.getProperty("user.dir"));
-
-    Class clazz = urlClassLoader.loadClass("flint.testConfig");
-    return (FlintConfiguration)clazz.newInstance();
+    Class outputClass = urlClassLoader.loadClass("flint.testConfig");
+    return (FlintConfiguration)outputClass.newInstance();
   }
 
   /**
