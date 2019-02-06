@@ -125,11 +125,11 @@ public class CLIAdapter {
 
     Class outputClass = urlClassLoader.loadClass(className);
 
-    FlintConfiguration output = (FlintConfiguration)outputClass.newInstance();
-
-    if (!output.getClass().getSuperclass().getSimpleName().equals("FlintConfiguration")) {
+    if (!outputClass.getSuperclass().getSimpleName().equals("FlintConfiguration")) {
       throw new IllegalArgumentException();
     }
+
+    FlintConfiguration output = (FlintConfiguration)outputClass.newInstance();
 
     return output;
   }

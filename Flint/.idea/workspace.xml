@@ -47,8 +47,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/flint/CLIAdapter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="129" column="58" lean-forward="true" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="58" />
+                <state relative-caret-position="185">
+                  <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
                   <folding>
                     <element signature="method#isJava#0;class#CLIAdapter#0" />
                   </folding>
@@ -77,8 +77,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/flint/LintFailure.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+                <state relative-caret-position="34">
+                  <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -90,8 +90,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="96" column="58" selection-start-line="96" selection-start-column="58" selection-end-line="96" selection-end-column="58" />
+                <state relative-caret-position="439">
+                  <caret line="118" column="69" selection-start-line="118" selection-start-column="69" selection-end-line="118" selection-end-column="69" />
                   <folding>
                     <element signature="e#1276#1289#0" expanded="true" />
                     <element signature="e#1515#1528#0" expanded="true" />
@@ -231,7 +231,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549478320747" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549478759751" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -439,18 +439,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 03m 27s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 05m 08s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 15m 43s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 16m 12s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 16m 50s.xml">
       <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
     </history-entry>
@@ -469,12 +457,24 @@
     <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 34m 10s.xml">
       <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 38m 43s.xml">
+      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 42m 51s.xml">
+      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 44m 22s.xml">
+      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 45m 15s.xml">
+      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19587629" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19587629" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -483,7 +483,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49896908" visible="true" weight="0.29809976" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49896908" visible="true" weight="0.29809976" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39804772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -524,17 +524,17 @@
     <entry file="file://$PROJECT_DIR$/src/test/java.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flint/LintFailure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/flint/FlintDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flint/LintFailure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -552,10 +552,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/flint/NotConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/flint/CLIAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="129" column="58" lean-forward="true" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="58" />
+        <state relative-caret-position="185">
+          <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
           <folding>
             <element signature="method#isJava#0;class#CLIAdapter#0" />
           </folding>
@@ -564,8 +571,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="96" column="58" selection-start-line="96" selection-start-column="58" selection-end-line="96" selection-end-column="58" />
+        <state relative-caret-position="439">
+          <caret line="118" column="69" selection-start-line="118" selection-start-column="69" selection-end-line="118" selection-end-column="69" />
           <folding>
             <element signature="e#1276#1289#0" expanded="true" />
             <element signature="e#1515#1528#0" expanded="true" />
