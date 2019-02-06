@@ -24,7 +24,7 @@ public class CLIAdapterTest {
 
   @Test
   public void isJavaNonJavaFileTest() {
-    assertFalse(CLIAdapter.isJava("definitely not java"));
+    assertFalse(CLIAdapter.isJava("definitely not java")); 
     assertFalse(CLIAdapter.isJava("isJava.java.class"));
     assertFalse(CLIAdapter.isJava("isJava.jav"));
     assertFalse(CLIAdapter.isJava("isTXT.txt"));
