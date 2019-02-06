@@ -1,6 +1,8 @@
 package flint;
 
 import java.io.File;
+import java.net.URL;
+import java.net.URLClassLoader;
 import java.util.Collection;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
@@ -103,11 +105,17 @@ public class CLIAdapter {
   * @throws IllegalArgumentException - If the passed in configPath is not a FlintConfiguration subclass.
   * */
   public static FlintConfiguration configInit(String configPath) throws Exception {
-    if (!isJava(configPath)) {
-      throw new FileNotFoundException();
-    }
+    URLClassLoader urlClassLoader = URLClassLoader.newInstance(new URL[] {
+            new URL(
+                    "file://" + System.getProperty("user.dir") + "\\src\\main\\java\\flint\\testConfig.jar"
+            )
+    });
 
-    return null;
+    System.out.println("Working Directory = " +
+            System.getProperty("user.dir"));
+
+    Class clazz = urlClassLoader.loadClass("flint.testConfig");
+    return (FlintConfiguration)clazz.newInstance();
   }
 
   /**

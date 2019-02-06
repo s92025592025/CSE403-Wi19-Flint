@@ -1,6 +1,7 @@
 package unit;
 
 import flint.CLIAdapter;
+import flint.FlintConfiguration;
 import flint.LintFailure;
 import org.junit.Before;
 import org.junit.Test;
@@ -79,5 +80,15 @@ public class CLIAdapterTest {
                     + "Message: Test 2 Error",
                   CLI_OUTPUT.toString().trim());
 
+  }
+
+  @Test
+  public void FlintConfigurationSuccessTest() throws Exception {
+    FlintConfiguration configObj = null;
+    String configPath = "D:\\UWGDrive\\UW GDrive\\CSE 403 A\\CSE403-Wi19-Flint\\Flint\\src\\main\\java\\flint\\";
+
+    configObj = CLIAdapter.configInit(configPath);
+
+    assertFalse(null == configObj);
   }
 }
