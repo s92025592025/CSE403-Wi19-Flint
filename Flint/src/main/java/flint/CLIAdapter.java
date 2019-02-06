@@ -47,7 +47,7 @@ public class CLIAdapter {
         flag_index += 2;
       } else {
         if (args[flag_index].equals("-usage")) {
-          System.out.println("Flint -config <Config File Path> -file-path <List of File Paths>");
+          System.out.println("Flint -config-jar <Config jar Path> -config-class <Class Name> -file-path <List of File Paths>");
         } else {
           System.out.println("Invalid flag \"" + args[flag_index] +
                   "\", check doc or run “flint -usage” for details.");
@@ -71,9 +71,13 @@ public class CLIAdapter {
       // check config file first
       config = configInit(flags.get("-config-jar"), flags.get("-config-class"));
     } catch (FileNotFoundException e) {
-      System.out.println("config file not exist");
+      System.out.println(flags.get("-config-jar") + " is not a valid flintConfiguration jar");
+    } catch (IllegalArgumentException e) {
+      System.out.println(flags.get("-config-class") + " is not subclass of FlintConfiguration");
+    } catch (ClassNotFoundException e) {
+      System.out.println(flags.get("-config-class") + " is not found in " + flags.get("-config-jar"));
     } catch (Exception e) {
-      System.out.println("Died from unexpected");
+      System.out.println("Died from the unexpected");
     } finally {
       System.exit(0);
     }
