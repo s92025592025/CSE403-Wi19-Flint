@@ -101,12 +101,13 @@ public class CLIAdapter {
   * This function initializes and returns the FlintConfiguration class.
   *
   * @param configPath - The path that leads to the FlintConfiguration subclass jar.
-  * @param classNAme - The java style class name for the FlintConfiguration subclass.
+  * @param className - The java style class name for the FlintConfiguration subclass.
   * @return Returns the initialized FlintConfiguration subclass if passed in a valid path.
   * @throws FileNotFoundException - If configPath did not lead to a jar.
   * @throws IllegalArgumentException - If the passed in configPath is not a FlintConfiguration subclass.
+  * @throws ClassNotFoundException - If the className could not be found
   * */
-  public static FlintConfiguration configInit(String configPath, String classNAme) throws Exception {
+  public static FlintConfiguration configInit(String configPath, String className) throws Exception {
     String realConfigPath = configPath;
 
     if (realConfigPath.charAt(0) != '\\' && realConfigPath.charAt(0) != '/') {
@@ -122,7 +123,7 @@ public class CLIAdapter {
             )
     });
 
-    Class outputClass = urlClassLoader.loadClass("flint.testConfig");
+    Class outputClass = urlClassLoader.loadClass(className);
 
     FlintConfiguration output = (FlintConfiguration)outputClass.newInstance();
 

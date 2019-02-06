@@ -48,7 +48,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/flint/CLIAdapter.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="476">
-                  <caret line="129" column="43" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
+                  <caret line="129" column="58" lean-forward="true" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="58" />
                   <folding>
                     <element signature="method#isJava#0;class#CLIAdapter#0" />
                   </folding>
@@ -90,8 +90,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="92" column="93" selection-start-line="92" selection-start-column="93" selection-end-line="92" selection-end-column="93" />
+                <state relative-caret-position="476">
+                  <caret line="96" column="58" selection-start-line="96" selection-start-column="58" selection-end-line="96" selection-end-column="58" />
                   <folding>
                     <element signature="e#1276#1289#0" expanded="true" />
                     <element signature="e#1515#1528#0" expanded="true" />
@@ -231,7 +231,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549478047970" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549478320747" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -439,9 +439,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 00m 45s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 03m 27s.xml">
       <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
     </history-entry>
@@ -467,6 +464,9 @@
       <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 31m 03s.xml">
+      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 34m 10s.xml">
       <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -555,7 +555,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/flint/CLIAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
-          <caret line="129" column="43" selection-start-line="129" selection-start-column="43" selection-end-line="129" selection-end-column="43" />
+          <caret line="129" column="58" lean-forward="true" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="58" />
           <folding>
             <element signature="method#isJava#0;class#CLIAdapter#0" />
           </folding>
@@ -564,8 +564,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="92" column="93" selection-start-line="92" selection-start-column="93" selection-end-line="92" selection-end-column="93" />
+        <state relative-caret-position="476">
+          <caret line="96" column="58" selection-start-line="96" selection-start-column="58" selection-end-line="96" selection-end-column="58" />
           <folding>
             <element signature="e#1276#1289#0" expanded="true" />
             <element signature="e#1515#1528#0" expanded="true" />
