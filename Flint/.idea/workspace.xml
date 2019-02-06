@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f91585e8-dd84-4551-b1a3-4c9b88a649a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flint/CLIAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flint/CLIAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -95,8 +88,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+                <state relative-caret-position="442">
+                  <caret line="128" column="46" selection-start-line="128" selection-start-column="46" selection-end-line="128" selection-end-column="46" />
                   <folding>
                     <element signature="e#1276#1289#0" expanded="true" />
                     <element signature="e#1515#1528#0" expanded="true" />
@@ -236,7 +229,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549479333419" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549479480042" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -444,9 +437,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 25m 53s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 31m 03s.xml">
       <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
     </history-entry>
@@ -472,6 +462,9 @@
       <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 54m 50s.xml">
+      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 56m 13s.xml">
       <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -576,8 +569,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+        <state relative-caret-position="442">
+          <caret line="128" column="46" selection-start-line="128" selection-start-column="46" selection-end-line="128" selection-end-column="46" />
           <folding>
             <element signature="e#1276#1289#0" expanded="true" />
             <element signature="e#1515#1528#0" expanded="true" />
