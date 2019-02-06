@@ -12,6 +12,7 @@
 */.idea/**/usage.statistics.xml
 */.idea/**/dictionaries
 */.idea/**/shelf
+.vscode
 
 # Generated files
 */.idea/**/contentModel.xml
@@ -124,5 +125,6 @@ gradle-app.setting
 
 ### Gradle Patch ###
 **/build/
+**/bin/
 
 # End of https://www.gitignore.io/api/java,gradle,intellij
