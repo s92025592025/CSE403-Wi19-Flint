@@ -34,7 +34,8 @@ public class CLIAdapter {
     Map<String, String> flags = new HashMap<String, String>();
 
     // setup flags
-    flags.put("-config", null);
+    flags.put("-config-jar", null);
+    flags.put("-config-class", null);
     flags.put("-file-path", null);
 
     int flag_index = 0;
@@ -68,7 +69,7 @@ public class CLIAdapter {
     // check if the flag input is given correctly
     try {
       // check config file first
-      config = configInit(flags.get("-config"));
+      config = configInit(flags.get("-config-jar"), flags.get("-config-class"));
     } catch (FileNotFoundException e) {
       System.out.println("config file not exist");
     } catch (Exception e) {
@@ -99,12 +100,13 @@ public class CLIAdapter {
   /**
   * This function initializes and returns the FlintConfiguration class.
   *
-  * @param configPath - The path that leads to the FlintConfiguration subclass file.
+  * @param configPath - The path that leads to the FlintConfiguration subclass jar.
+  * @param classNAme - The java style class name for the FlintConfiguration subclass.
   * @return Returns the initialized FlintConfiguration subclass if passed in a valid path.
   * @throws FileNotFoundException - If configPath did not lead to a jar.
   * @throws IllegalArgumentException - If the passed in configPath is not a FlintConfiguration subclass.
   * */
-  public static FlintConfiguration configInit(String configPath) throws Exception {
+  public static FlintConfiguration configInit(String configPath, String classNAme) throws Exception {
     String realConfigPath = configPath;
 
     if (realConfigPath.charAt(0) != '\\' && realConfigPath.charAt(0) != '/') {
@@ -121,7 +123,14 @@ public class CLIAdapter {
     });
 
     Class outputClass = urlClassLoader.loadClass("flint.testConfig");
-    return (FlintConfiguration)outputClass.newInstance();
+
+    FlintConfiguration output = (FlintConfiguration)outputClass.newInstance();
+
+    if (!output.getClass().getSuperclass().getSimpleName().equals("FlintConfiguration")) {
+      throw new IllegalArgumentException();
+    }
+
+    return output;
   }
 
   /**

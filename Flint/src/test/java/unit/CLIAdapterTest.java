@@ -86,9 +86,10 @@ public class CLIAdapterTest {
   public void FlintConfigurationSuccessTest() throws Exception {
     FlintConfiguration configObj = null;
     String configPath = "src\\main\\java\\flint\\";
+    String className = "flint.testConfig";
 
-    configObj = CLIAdapter.configInit(configPath);
+    configObj = CLIAdapter.configInit(configPath, className);
 
-    assertFalse(null == configObj);
+    assertEquals("FlintConfiguration", configObj.getClass().getSuperclass().getSimpleName());
   }
 }
