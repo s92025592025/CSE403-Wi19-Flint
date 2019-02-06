@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -85,7 +86,7 @@ public class CLIAdapterTest {
   @Test
   public void configInitDirSuccessTest() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "src\\main\\java\\flint\\";
+    String configPath = "src/main/java/flint/";
     String className = "flint.testConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
@@ -96,7 +97,7 @@ public class CLIAdapterTest {
   @Test
   public void configInitUseJarSuccessTest() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "src\\main\\java\\flint\\testConfig.jar";
+    String configPath = "src/main/java/flint/testConfig.jar";
     String className = "flint.testConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
@@ -107,7 +108,7 @@ public class CLIAdapterTest {
   @Test(expected = IllegalArgumentException.class)
   public void configInitUseDirWrongClass() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "src\\main\\java\\flint\\";
+    String configPath = "src/main/java/flint/";
     String className = "flint.NotConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
@@ -116,9 +117,11 @@ public class CLIAdapterTest {
   @Test(expected = IllegalArgumentException.class)
   public void configInitUseJarWrongClass() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "src\\main\\java\\flint\\wrongConfigClass.jar";
+    String configPath = "src/main/java/flint/wrongConfigClass.jar";
     String className = "flint.NotConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
   }
+
+  //@Test(expected = FileNotFoundException.class)
 }

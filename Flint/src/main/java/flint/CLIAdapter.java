@@ -108,6 +108,12 @@ public class CLIAdapter {
   * @throws ClassNotFoundException - If the className could not be found
   * */
   public static FlintConfiguration configInit(String configPath, String className) throws Exception {
+    File file = new File(configPath);
+
+    if (!file.exists()) {
+      throw new FileNotFoundException();
+    }
+
     String realConfigPath = configPath;
 
     if (realConfigPath.charAt(0) != '\\' && realConfigPath.charAt(0) != '/') {
