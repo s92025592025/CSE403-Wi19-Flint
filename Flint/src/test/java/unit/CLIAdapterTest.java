@@ -86,8 +86,8 @@ public class CLIAdapterTest {
   @Test
   public void configInitDirSuccessTest() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "src/main/java/flint/";
-    String className = "flint.testConfig";
+    String configPath = "src/test/mocks/";
+    String className = "flint.TestConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
 
@@ -97,8 +97,8 @@ public class CLIAdapterTest {
   @Test
   public void configInitUseJarSuccessTest() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "src/main/java/flint/testConfig.jar";
-    String className = "flint.testConfig";
+    String configPath = "src/test/mocks/TestConfig.jar";
+    String className = "flint.TestConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
 
@@ -108,7 +108,7 @@ public class CLIAdapterTest {
   @Test(expected = IllegalArgumentException.class)
   public void configInitUseDirWrongClassTest() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "src/main/java/flint/";
+    String configPath = "src/test/mocks/";
     String className = "flint.NotConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
@@ -117,7 +117,7 @@ public class CLIAdapterTest {
   @Test(expected = IllegalArgumentException.class)
   public void configInitUseJarWrongClassTest() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "src/main/java/flint/wrongConfigClass.jar";
+    String configPath = "src/test/mocks/WrongConfigClass.jar";
     String className = "flint.NotConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
@@ -126,7 +126,7 @@ public class CLIAdapterTest {
   @Test(expected = FileNotFoundException.class)
   public void configInitNonExistPathTest() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "definitely/not/a/path/wrongConfigClass.jar";
+    String configPath = "definitely/not/a/path/WrongConfigClass.jar";
     String className = "flint.NotConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
