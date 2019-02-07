@@ -47,7 +47,7 @@ public class CLIAdapter {
         flag_index += 2;
       } else {
         if (args[flag_index].equals("-usage")) {
-          System.out.println("Flint -config-jar <Config jar Path> -config-class <Class Name> -file-path <List of File Paths>");
+          System.out.println("Flint -config-jar <Config jar Path> -config-class <Class Name> -file-path <File Paths>");
         } else {
           System.out.println("Invalid flag \"" + args[flag_index] +
                   "\", check doc or run “flint -usage” for details.");
