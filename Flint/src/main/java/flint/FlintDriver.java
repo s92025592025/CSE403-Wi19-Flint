@@ -9,10 +9,6 @@ import com.github.javaparser.JavaParser;
 import com.github.javaparser.ParseProblemException;
 
 public class FlintDriver {
-  public static void main(String[] args) {
-    System.out.println("yo " + FlintDriver.class.getProtectionDomain().getCodeSource().getLocation().getPath());
-  }
-
   /**
    * This method checks whether fileToLint refers to a compileable Java class,
    * throwing an IllegalArgumentException if not, then produces a Scanner to the

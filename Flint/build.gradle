@@ -28,7 +28,7 @@ patchPluginXml {
       <em>most HTML tags may be used</em>"""
 }
 
-task(driver, dependsOn: 'classes', type: JavaExec) {
-    main = 'flint.FlintDriver'
-    classpath = sourceSets.main.runtimeClasspath
-}
+// task(driver, dependsOn: 'classes', type: JavaExec) {
+//     main = 'flint.FlintDriver'
+//     classpath = sourceSets.main.runtimeClasspath
+// }
