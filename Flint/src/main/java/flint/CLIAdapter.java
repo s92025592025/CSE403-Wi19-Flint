@@ -112,19 +112,21 @@ public class CLIAdapter {
   * @throws ClassNotFoundException - If the className could not be found
   * */
   public static FlintConfiguration configInit(String configPath, String className) throws Exception {
-    File file = new File(configPath);
-
-    if (!file.exists()) {
-      throw new FileNotFoundException();
-    }
-
     String realConfigPath = configPath;
+    String realConfigFilePath = configPath;
 
     if (realConfigPath.charAt(0) != '\\' && realConfigPath.charAt(0) != '/') {
       // if not passing absolute path
       realConfigPath = "file://" + System.getProperty("user.dir") + "/" + realConfigPath;
+      realConfigFilePath = System.getProperty("user.dir") + "/" + realConfigFilePath;
     } else {
       realConfigPath = "file://" + realConfigPath;
+    }
+
+    File file = new File(realConfigFilePath);
+
+    if (!file.exists()) {
+      throw new FileNotFoundException();
     }
 
     URLClassLoader urlClassLoader = URLClassLoader.newInstance(new URL[] {
