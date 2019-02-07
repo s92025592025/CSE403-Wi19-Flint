@@ -2,7 +2,6 @@ package flint;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Collection;
 
@@ -10,6 +9,10 @@ import com.github.javaparser.JavaParser;
 import com.github.javaparser.ParseProblemException;
 
 public class FlintDriver {
+  public static void main(String[] args) {
+    System.out.println("yo " + FlintDriver.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+  }
+
   /**
    * This method checks whether fileToLint refers to a compileable Java class,
    * throwing an IllegalArgumentException if not, then produces a Scanner to the
@@ -24,9 +27,10 @@ public class FlintDriver {
    * @throws IllegalArgumentException - If fileToLint does not compile
    * @throws ParseProblemException    - If fileToLint could not be successfully
    *                                  parsed
+   * @throws Exception                - If config.runChecks() throws an exception
    */
   public static Collection<LintFailure> run(String fileToLint, FlintConfiguration config)
-      throws FileNotFoundException, IllegalArgumentException, ParseProblemException, IOException {
+      throws FileNotFoundException, IllegalArgumentException, ParseProblemException, Exception {
     if (doesCompile(fileToLint)) {
       RandomAccessFile inputFile = new RandomAccessFile(fileToLint, "r");
       Collection<LintFailure> result = config.runChecks(inputFile, JavaParser.parse(new File(fileToLint)));
