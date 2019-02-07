@@ -86,8 +86,8 @@ public class CLIAdapterTest {
   @Test
   public void configInitDirSuccessTest() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "src/test/mocks/";
-    String className = "flint.TestConfig";
+    String configPath = "src/test/java/mocks/";
+    String className = "mocks.TestConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
 
@@ -97,8 +97,8 @@ public class CLIAdapterTest {
   @Test
   public void configInitUseJarSuccessTest() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "src/test/mocks/TestConfig.jar";
-    String className = "flint.TestConfig";
+    String configPath = "src/test/java/mocks/TestConfig.jar";
+    String className = "mocks.TestConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
 
@@ -108,8 +108,8 @@ public class CLIAdapterTest {
   @Test(expected = IllegalArgumentException.class)
   public void configInitUseDirWrongClassTest() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "src/test/mocks/";
-    String className = "flint.NotConfig";
+    String configPath = "src/test/java/mocks/";
+    String className = "mocks.NotConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
   }
@@ -117,8 +117,8 @@ public class CLIAdapterTest {
   @Test(expected = IllegalArgumentException.class)
   public void configInitUseJarWrongClassTest() throws Exception {
     FlintConfiguration configObj = null;
-    String configPath = "src/test/mocks/WrongConfigClass.jar";
-    String className = "flint.NotConfig";
+    String configPath = "src/test/java/mocks/WrongConfigClass.jar";
+    String className = "mocks.NotConfig";
 
     configObj = CLIAdapter.configInit(configPath, className);
   }

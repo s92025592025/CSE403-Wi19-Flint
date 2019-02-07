@@ -1,4 +1,4 @@
-package flint;
+package mocks;
 
 public class NotConfig {
 }

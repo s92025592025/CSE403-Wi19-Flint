@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f91585e8-dd84-4551-b1a3-4c9b88a649a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flint/testConfig.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flint/testConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flint/TestConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flint/wrongConfigClass.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/mocks/WrongConfigClass.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flint/NotConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mocks/NotConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/flint/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mocks/TestConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/mocks/TestConfig.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mocks/TestConfig.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/mocks/WrongConfigClass.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mocks/WrongConfigClass.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -109,8 +110,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="311">
-                  <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+                <state relative-caret-position="286">
+                  <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
                   <folding>
                     <element signature="e#1276#1289#0" expanded="true" />
                     <element signature="e#1515#1528#0" expanded="true" />
@@ -120,10 +121,19 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/flint/TestConfig.java">
+            <entry file="file://$PROJECT_DIR$/src/test/java/mocks/TestConfig.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+                <state relative-caret-position="68">
+                  <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/mocks/NotConfig.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
                 </state>
               </provider>
             </entry>
@@ -162,8 +172,10 @@
         <option value="$PROJECT_DIR$/src/test/java/Unit/CLIAdapterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/flint/testConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/flint/CLIAdapter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/flint/FlintConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/test/mocks/NotConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/mocks/TestConfig.java" />
+        <option value="$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java" />
       </list>
     </option>
   </component>
@@ -238,14 +250,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="mocks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Flint" type="b2602c69:ProjectViewProjectNode" />
               <item name="Flint" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="mocks" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -258,7 +271,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549524241791" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549524616284" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -283,10 +296,10 @@
       <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\UWGDrive\UW GDrive\CSE 403 A\CSE403-Wi19-Flint\Flint\src\test\java" />
       <recent name="D:\UWGDrive\UW GDrive\CSE 403 A\CSE403-Wi19-Flint\Flint\src\test\mocks" />
       <recent name="D:\UWGDrive\UW GDrive\CSE 403 A\CSE403-Wi19-Flint\Flint\src\test" />
       <recent name="D:\UWGDrive\UW GDrive\CSE 403 A\CSE403-Wi19-Flint\Flint\src\test\java\Unit" />
-      <recent name="D:\UWGDrive\UW GDrive\CSE 403 A\CSE403-Wi19-Flint\Flint\src\test\java" />
       <recent name="D:\UWGDrive\UW GDrive\CSE 403 A\CSE403-Wi19-Flint\Flint\src" />
     </key>
   </component>
@@ -467,35 +480,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 48m 57s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 54m 50s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 56m 13s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 10h 58m 02s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 11h 14m 33s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 11h 15m 36s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 18h 59m 07s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 18h 59m 35s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 19h 07m 59s.xml">
-      <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CLIAdapterTest_(1) - 2019.02.06 at 19h 09m 31s.xml">
       <configuration name="CLIAdapterTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.06 at 23h 24m 04s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.06 at 23h 26m 20s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.06 at 23h 27m 26s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.06 at 23h 28m 02s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.06 at 23h 28m 43s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.06 at 23h 29m 05s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.06 at 23h 29m 17s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.06 at 23h 29m 45s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CLIAdapterTest - 2019.02.06 at 23h 30m 02s.xml">
+      <configuration name="CLIAdapterTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -511,7 +524,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49896908" visible="true" weight="0.27114967" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49896908" visible="true" weight="0.27006507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39804772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -552,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flint/NotConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/flint/CLIAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -569,31 +575,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/mocks/TestConfig.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/mocks/TestConfig.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/flint/LintFailure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/flint/TestConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
-          <folding>
-            <element signature="e#1276#1289#0" expanded="true" />
-            <element signature="e#1515#1528#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,6 +603,31 @@
           <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mocks/TestConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mocks/NotConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/unit/CLIAdapterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
+          <folding>
+            <element signature="e#1276#1289#0" expanded="true" />
+            <element signature="e#1515#1528#0" expanded="true" />
           </folding>
         </state>
       </provider>
