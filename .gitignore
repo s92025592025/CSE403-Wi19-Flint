@@ -12,6 +12,7 @@
 */.idea/**/usage.statistics.xml
 */.idea/**/dictionaries
 */.idea/**/shelf
+.vscode
 
 # Generated files
 */.idea/**/contentModel.xml
@@ -109,6 +110,7 @@ hs_err_pid*
 ### Gradle ###
 .gradle
 */build/
+*/.gradle/
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -124,5 +126,6 @@ gradle-app.setting
 
 ### Gradle Patch ###
 **/build/
+**/bin/
 
 # End of https://www.gitignore.io/api/java,gradle,intellij

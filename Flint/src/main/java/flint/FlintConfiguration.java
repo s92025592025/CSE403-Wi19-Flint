@@ -1,15 +1,11 @@
 package flint;
 
-import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Collection;
 
 import com.github.javaparser.ast.CompilationUnit;
 
 public abstract class FlintConfiguration {
-
-  public FlintConfiguration();
-
   /**
    * Defines how to run whatever rules it chooses to run 
    * (in what order, under what conditions, etc), 
