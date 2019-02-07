@@ -179,14 +179,10 @@ public class CLIAdapter {
       throw new NullPointerException();
     }
 
-    Iterator<LintFailure> failureIt = result.iterator();
-
-    while (failureIt.hasNext()) {
-      LintFailure failure = failureIt.next();
-
+    for (LintFailure failure: result) {
       System.out.println("Line " + failure.getLineStart() + ":" + failure.getLineEnd() + ", "
-                         + "Col " + failure.getColStart() + ":" + failure.getColEnd() + "\n"
-                         + "Message: " + failure.getMessage());
+              + "Col " + failure.getColStart() + ":" + failure.getColEnd() + "\n"
+              + "Message: " + failure.getMessage());
     }
   }
 
