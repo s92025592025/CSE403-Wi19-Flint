@@ -3,6 +3,7 @@ package unit;
 import flint.CLIAdapter;
 import flint.FlintConfiguration;
 import flint.LintFailure;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,10 +11,11 @@ import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class CLIAdapterTest {
   private static ByteArrayOutputStream CLI_OUTPUT;

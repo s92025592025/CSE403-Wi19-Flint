@@ -6,7 +6,6 @@ import java.net.URLClassLoader;
 import java.util.Collection;
 import java.io.FileNotFoundException;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.regex.Pattern;
 
