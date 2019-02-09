@@ -97,6 +97,8 @@ out/
 
 # Package Files #
 *.jar
+!*testConfig.jar
+!*wrongConfigClass.jar
 *.war
 *.nar
 *.ear
@@ -110,6 +112,7 @@ hs_err_pid*
 ### Gradle ###
 .gradle
 */build/
+*/.gradle/
 
 # Ignore Gradle GUI config
 gradle-app.setting
