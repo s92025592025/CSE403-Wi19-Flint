@@ -1,7 +1,7 @@
 package flint;
 
 import java.util.Collection;
-import javax.tools.*;
+import javax.tools.JavaCompiler;
 
 
 public class FlintDriver {
