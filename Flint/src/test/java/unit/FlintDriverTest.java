@@ -65,4 +65,9 @@ public class FlintDriverTest {
     assertEquals(tc.getAstClass(), CompilationUnit.class);
     assertEquals(tc.getClassName(), "FlintDriver");
   }
+
+  @Test
+  public void compilesJavaFile() {
+
+  }
 }
