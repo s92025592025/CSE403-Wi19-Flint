@@ -65,11 +65,11 @@ public class CLIAdapterTest {
     result.add(new LintFailure(0, 1, 23, 45, "Test 1 Error"));
     CLIAdapter.resultOutput(result);
     assertEquals("Line 0:1, Col 23:45\n"
-    + "Message: Test 1 Error\n",
-    CLI_OUTPUT.toString().replace("\r", ""));
+                    + "Message: Test 1 Error\n",
+                  CLI_OUTPUT.toString().replace("\r", ""));
     
     result.add(new LintFailure(123, 125, 64, 78, "Test 2 Error"));
-    
+
     CLI_OUTPUT.reset();
     CLIAdapter.resultOutput(result);
     assertEquals("Line 0:1, Col 23:45\n"
