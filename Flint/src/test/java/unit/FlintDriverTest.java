@@ -1,8 +1,9 @@
 package unit;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
@@ -14,8 +15,8 @@ import flint.FlintDriver;
 import mocks.TestConfig;
 
 public class FlintDriverTest {
-  @Test(expected = FileNotFoundException.class)
-  public void throwsExceptionForNonexistentFile() throws Exception {
+  @Test(expected = IllegalArgumentException.class)
+  public void throwsExceptionForUncompilableFile() throws Exception {
     FlintDriver.run("invalid-file.java", new TestConfig());
   }
 
@@ -67,7 +68,14 @@ public class FlintDriverTest {
   }
 
   @Test
-  public void compilesJavaFile() {
+  public void compilesValidJavaFile() {
+    String filepath = "src/main/java/flint/FlintDriver.java";
+    assertTrue(FlintDriver.doesCompile(filepath));
+  }
 
+  @Test
+  public void doesNotCompileInvalidJavaFile() {
+    String filepath = "src/test/java/mocks/Invalid.java";
+    assertFalse(FlintDriver.doesCompile(filepath));
   }
 }

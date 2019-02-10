@@ -49,7 +49,7 @@ public class CLIAdapter {
           System.out.println("Flint -config-jar <Config jar Path> -config-class <Class Name> -file-path <File Paths>");
         } else {
           System.out.println("Invalid flag \"" + args[flag_index] +
-                  "\", check doc or run “flint -usage” for details.");
+                  "\", check doc or run \"flint -usage\" for details.");
         }
 
         return; // end function if user called -usage or invalid flag
@@ -59,7 +59,7 @@ public class CLIAdapter {
     // check if the all the required flags are entered.
     for (String essentialFlags : flags.keySet()) {
       if (flags.get(essentialFlags) == null) {
-        System.out.println("Missing required flags, run “flint -usage” for details.");
+        System.out.println("Missing required flags, run \"flint -usage\" for details.");
 
         return; // end function if user did not fulfill required flags
       }
@@ -134,7 +134,7 @@ public class CLIAdapter {
             )
     });
 
-    Class outputClass = urlClassLoader.loadClass(className);
+    Class<?> outputClass = urlClassLoader.loadClass(className);
 
     if (!outputClass.getSuperclass().getSimpleName().equals("FlintConfiguration")) {
       throw new IllegalArgumentException();
@@ -164,7 +164,7 @@ public class CLIAdapter {
   * @param config - The configuration to run on flieToLint.
   * // Otherexception that will be returned from run
   * */
-  public static Collection<LintFailure> run(String fileToLint, FlintConfiguration config) throws Exception{
+  public static Collection<LintFailure> run(String fileToLint, FlintConfiguration config) throws Exception {
     return FlintDriver.run(fileToLint, config);
   }
 
@@ -175,7 +175,7 @@ public class CLIAdapter {
   * @param result - The collection of failure results from Driver
   * @throws NullPointerException - When result is null
   * */
-  public static void resultOutput(Collection<LintFailure> result) throws NullPointerException{
+  public static void resultOutput(Collection<LintFailure> result) throws NullPointerException {
     if (result == null) {
       throw new NullPointerException();
     }
