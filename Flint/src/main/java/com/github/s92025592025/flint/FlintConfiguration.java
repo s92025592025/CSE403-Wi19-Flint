@@ -1,4 +1,4 @@
-package flint;
+package com.github.s92025592025.flint;
 
 import java.io.RandomAccessFile;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package flint;
+package com.github.s92025592025.flint;
 
 public class LintFailure {
   private int lineStart, lineEnd, colStart, colEnd;

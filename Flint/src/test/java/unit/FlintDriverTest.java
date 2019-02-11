@@ -11,7 +11,7 @@ import com.github.javaparser.ast.CompilationUnit;
 
 import org.junit.Test;
 
-import flint.FlintDriver;
+import com.github.s92025592025.flint.FlintDriver;
 import mocks.TestConfig;
 
 public class FlintDriverTest {
