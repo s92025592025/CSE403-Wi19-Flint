@@ -26,8 +26,7 @@ public class TestConfig extends FlintConfiguration {
     this.shouldWriteToFile = value;
   }
 
-  
-  public Collection<LintFailure> runChecks(RandomAccessFile inputFile, CompilationUnit astRoot) throws IOException {
+  public Collection<LintFailure> runChecks(CompilationUnit astRoot, RandomAccessFile inputFile) throws IOException {
     this.callCount++;
     this.file = inputFile;
     this.fileClass = inputFile.getClass();
@@ -42,7 +41,7 @@ public class TestConfig extends FlintConfiguration {
     }
     return new HashSet<LintFailure>();
   }
-  
+
   public void readFromFile() throws IOException {
     this.file.seek(0);
     this.file.read();
@@ -51,11 +50,11 @@ public class TestConfig extends FlintConfiguration {
   public int getCallCount() {
     return callCount;
   }
-  
+
   public Class<?> getFileClass() {
     return fileClass;
   }
-  
+
   public long getFileLength() {
     return fileLength;
   }
@@ -63,7 +62,7 @@ public class TestConfig extends FlintConfiguration {
   public Class<?> getAstClass() {
     return astClass;
   }
-  
+
   public String getClassName() {
     return className;
   }

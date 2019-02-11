@@ -29,7 +29,7 @@ public class FlintDriver {
       throws IllegalArgumentException, ParseProblemException, Exception {
     if (doesCompile(fileToLint)) {
       RandomAccessFile inputFile = new RandomAccessFile(fileToLint, "r");
-      Collection<LintFailure> result = config.runChecks(inputFile, JavaParser.parse(new File(fileToLint)));
+      Collection<LintFailure> result = config.runChecks(JavaParser.parse(new File(fileToLint)), inputFile);
       inputFile.close();
       return result;
     } else {
