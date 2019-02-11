@@ -96,7 +96,7 @@ public class CLIAdapter {
     } catch (Exception e) {
       // not sure what kind of exceptions will happen
       System.out.println(e.getClass());
-      System.out.println("lalal");
+      System.out.println(e.getMessage());
       System.exit(0);
     }
 

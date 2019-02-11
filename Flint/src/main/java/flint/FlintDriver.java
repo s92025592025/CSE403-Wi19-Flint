@@ -27,8 +27,12 @@ public class FlintDriver {
    */
   public static Collection<LintFailure> run(String fileToLint, FlintConfiguration config)
       throws IllegalArgumentException, ParseProblemException, Exception {
+    assert(config != null);
+    assert(fileToLint != null);
     if (doesCompile(fileToLint)) {
       RandomAccessFile inputFile = new RandomAccessFile(fileToLint, "r");
+      assert(inputFile != null);
+      assert(new File(fileToLint) != null);
       Collection<LintFailure> result = config.runChecks(JavaParser.parse(new File(fileToLint)), inputFile);
       inputFile.close();
       return result;
@@ -47,6 +51,7 @@ public class FlintDriver {
    */
   public static boolean doesCompile(String filePath) {
     JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+    assert(compiler != null);
     int res = compiler.run(null, null, null, filePath);
     if (res == 0) {
         return true;
