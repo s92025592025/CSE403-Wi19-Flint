@@ -64,20 +64,22 @@ public class CLIAdapter {
         return; // end function if user did not fulfill required flags
       }
     }
-
+    
     // check if the flag input is given correctly
     try {
       // check config file first
       config = configInit(flags.get("-config-jar"), flags.get("-config-class"));
     } catch (FileNotFoundException e) {
       System.out.println(flags.get("-config-jar") + " is not a valid flintConfiguration jar");
+      System.exit(0);
     } catch (IllegalArgumentException e) {
       System.out.println(flags.get("-config-class") + " is not subclass of FlintConfiguration");
+      System.exit(0);
     } catch (ClassNotFoundException e) {
       System.out.println(flags.get("-config-class") + " is not found in " + flags.get("-config-jar"));
+      System.exit(0);
     } catch (Exception e) {
       System.out.println("Died from the unexpected");
-    } finally {
       System.exit(0);
     }
 
@@ -93,7 +95,7 @@ public class CLIAdapter {
       result = run(flags.get("-file-path"), config);
     } catch (Exception e) {
       // not sure what kind of exceptions will happen
-    } finally {
+      System.out.println(e.getMessage());
       System.exit(0);
     }
 
@@ -141,7 +143,6 @@ public class CLIAdapter {
     }
 
     FlintConfiguration output = (FlintConfiguration)outputClass.newInstance();
-
     return output;
   }
 
