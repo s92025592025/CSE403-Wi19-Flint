@@ -1,11 +1,18 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath 'com.bmuschko:gradle-nexus-plugin:2.3.1'
+  }
+}
+
 plugins {
     id 'groovy'
     id 'java'
     id 'org.jetbrains.intellij' version '0.4.2'
+    id 'io.codearte.nexus-staging' version '0.11.0'
 }
-
-group 'Flint'
-version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
@@ -28,6 +35,16 @@ sourceSets {
    }
 }
 
+jar {
+    manifest {
+        attributes "Main-Class": "flint.CLIAdapter"
+    }
+ 
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
 test {
   testLogging {
     showStandardStreams = true
@@ -41,6 +58,57 @@ patchPluginXml {
     changeNotes """
       Add change notes here.<br>
       <em>most HTML tags may be used</em>"""
+}
+
+apply plugin: 'com.bmuschko.nexus'
+
+archivesBaseName = 'flint'
+group = "com.github.s92025592025"
+version = "0.1"
+
+modifyPom {
+  project {
+    name 'flint'
+    description 'Flint - A Programmable Java Style Linter'
+    url 'https://github.com/s92025592025/CSE403-Wi19-Flint'
+    inceptionYear '2019'
+    scm {
+      url 'https://github.com/s92025592025/CSE403-Wi19-Flint'
+      connection 'scm:https://github.com/s92025592025/CSE403-Wi19-Flint.git'
+      developerConnection 'scm:git://github.com/s92025592025/CSE403-Wi19-Flint.git'
+    }
+    licenses {
+      license {
+        name 'The Apache Software License, Version 2.0'
+        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+        distribution 'repo'
+      }
+    }
+    developers {
+      developer {
+        id 'ofekinbar'
+        name 'Ofek Inbar'
+        email 'ofekinbar@hotmail.com'
+      }
+    }
+  }
+}
+
+extraArchive {
+  sources = true
+  tests = true
+  javadoc = true
+}
+
+nexus {
+  sign = true
+  repositoryUrl = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/'
+  snapshotRepositoryUrl = 'https://oss.sonatype.org/content/repositories/snapshots/'
+}
+
+nexusStaging {
+  packageGroup = "com.github.s92025592025"
+  stagingProfileId = "98f8f76941e987"
 }
 
 // task(driver, dependsOn: 'classes', type: JavaExec) {
