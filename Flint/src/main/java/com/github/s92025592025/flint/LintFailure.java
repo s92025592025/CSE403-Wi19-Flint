@@ -1,4 +1,4 @@
-package flint;
+package com.github.s92025592025.flint;
 
 public class LintFailure {
   private int lineStart, lineEnd, colStart, colEnd;
@@ -30,5 +30,16 @@ public class LintFailure {
 
   public String getMessage() {
     return this.msg;
+  }
+
+  public boolean failurePositionEquals(LintFailure o) {
+    return LintFailure.failurePositionEquals(this, o);
+  }
+
+  public static boolean failurePositionEquals(LintFailure f1, LintFailure f2) {
+    return f1.lineStart == f2.lineStart &&
+        f1.lineEnd == f2.lineEnd &&
+        f1.colStart == f2.colStart &&
+        f1.colEnd == f2.colEnd;
   }
 }

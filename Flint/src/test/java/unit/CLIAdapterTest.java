@@ -1,8 +1,8 @@
 package unit;
 
-import flint.CLIAdapter;
-import flint.FlintConfiguration;
-import flint.LintFailure;
+import com.github.s92025592025.flint.CLIAdapter;
+import com.github.s92025592025.flint.FlintConfiguration;
+import com.github.s92025592025.flint.LintFailure;
 import org.junit.Before;
 import org.junit.Test;
 

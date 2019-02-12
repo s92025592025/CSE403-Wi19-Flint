@@ -8,8 +8,8 @@ import java.util.HashSet;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 
-import flint.FlintConfiguration;
-import flint.LintFailure;
+import com.github.s92025592025.flint.FlintConfiguration;
+import com.github.s92025592025.flint.LintFailure;
 
 public class TestConfig extends FlintConfiguration {
   private boolean shouldWriteToFile = false;
