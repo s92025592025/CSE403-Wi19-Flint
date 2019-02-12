@@ -64,7 +64,7 @@ public class CLIAdapter {
         return; // end function if user did not fulfill required flags
       }
     }
-    
+
     // check if the flag input is given correctly
     try {
       // check config file first
@@ -95,6 +95,7 @@ public class CLIAdapter {
       result = run(flags.get("-file-path"), config);
     } catch (Exception e) {
       // not sure what kind of exceptions will happen
+      System.out.println(e.getClass());
       System.out.println(e.getMessage());
       System.exit(0);
     }
@@ -113,16 +114,7 @@ public class CLIAdapter {
   * @throws ClassNotFoundException - If the className could not be found
   * */
   public static FlintConfiguration configInit(String configPath, String className) throws Exception {
-    String realConfigPath = configPath;
     String realConfigFilePath = configPath;
-
-    if (realConfigPath.charAt(0) != '\\' && realConfigPath.charAt(0) != '/') {
-      // if not passing absolute path
-      realConfigPath = "file://" + System.getProperty("user.dir") + "/" + realConfigPath;
-      realConfigFilePath = System.getProperty("user.dir") + "/" + realConfigFilePath;
-    } else {
-      realConfigPath = "file://" + realConfigPath;
-    }
 
     File file = new File(realConfigFilePath);
 
@@ -131,9 +123,7 @@ public class CLIAdapter {
     }
 
     URLClassLoader urlClassLoader = URLClassLoader.newInstance(new URL[] {
-            new URL(
-                    realConfigPath
-            )
+            file.toURI().toURL()
     });
 
     Class<?> outputClass = urlClassLoader.loadClass(className);
