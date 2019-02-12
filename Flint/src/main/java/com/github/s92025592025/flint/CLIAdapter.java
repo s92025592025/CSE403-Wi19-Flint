@@ -76,6 +76,9 @@ public class CLIAdapter {
       System.out.println(flags.get("-config-class") + " is not found in " + flags.get("-config-jar"));
       System.exit(0);
     } catch (Exception e) {
+      System.out.println(e.getClass());
+      System.out.println(e.getLocalizedMessage());
+      e.printStackTrace();;
       System.out.println("Died from the unexpected");
       System.exit(0);
     }
