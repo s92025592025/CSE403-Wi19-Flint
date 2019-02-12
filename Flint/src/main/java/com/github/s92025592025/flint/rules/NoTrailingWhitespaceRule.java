@@ -14,7 +14,7 @@ public class NoTrailingWhitespaceRule {
     String line;
     String trimmed;
     while ((line = inputFile.readLine()) != null) {
-      trimmed = line.trim();
+      trimmed = line.replaceFirst("\\s++$", "");
       if (trimmed.length() < line.length()) {
         result.add(new LintFailure(lineNum, lineNum, trimmed.length() + 1, line.length() + 1,
             "Please remove trailing whitespace."));
