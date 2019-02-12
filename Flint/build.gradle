@@ -37,7 +37,7 @@ sourceSets {
 
 jar {
     manifest {
-        attributes "Main-Class": "flint.CLIAdapter"
+        attributes "Main-Class": "com.github.s92025592025.flint.CLIAdapter"
     }
  
     from {
@@ -64,7 +64,7 @@ apply plugin: 'com.bmuschko.nexus'
 
 archivesBaseName = 'flint'
 group = "com.github.s92025592025"
-version = "0.1.2"
+version = "0.1.3"
 
 modifyPom {
   project {

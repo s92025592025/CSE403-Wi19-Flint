@@ -78,7 +78,7 @@ public class CLIAdapter {
     } catch (Exception e) {
       System.out.println(e.getClass());
       System.out.println(e.getLocalizedMessage());
-      e.printStackTrace();;
+      e.printStackTrace();
       System.out.println("Died from the unexpected");
       System.exit(0);
     }
