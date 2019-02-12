@@ -30,7 +30,7 @@ public class CLIAdapter {
     Map<String, String> flags = new HashMap<String, String>();
 
     // setup flags
-    flags.put("-config-jar", null);
+    flags.put("-config-path", null);
     flags.put("-config-class", null);
     flags.put("-file-path", null);
 
@@ -43,7 +43,7 @@ public class CLIAdapter {
         flag_index += 2;
       } else {
         if (args[flag_index].equals("-usage")) {
-          System.out.println("Flint -config-jar <Config jar Path> -config-class <Class Name> -file-path <File Paths>");
+          System.out.println("Flint -config-path <Config Directory Path> -config-class <Class Name> -file-path <File Paths>");
         } else {
           System.out
               .println("Invalid flag \"" + args[flag_index] + "\", check doc or run \"flint -usage\" for details.");
@@ -65,15 +65,15 @@ public class CLIAdapter {
     // check if the flag input is given correctly
     try {
       // check config file first
-      config = configInit(flags.get("-config-jar"), flags.get("-config-class"));
+      config = configInit(flags.get("-config-path"), flags.get("-config-class"));
     } catch (FileNotFoundException e) {
-      System.out.println(flags.get("-config-jar") + " is not a valid flintConfiguration jar");
+      System.out.println(flags.get("-config-path") + " is not a valid flintConfiguration jar");
       System.exit(0);
     } catch (IllegalArgumentException e) {
       System.out.println(flags.get("-config-class") + " is not subclass of FlintConfiguration");
       System.exit(0);
     } catch (ClassNotFoundException e) {
-      System.out.println(flags.get("-config-class") + " is not found in " + flags.get("-config-jar"));
+      System.out.println(flags.get("-config-class") + " is not found in " + flags.get("-config-path"));
       System.exit(0);
     } catch (Exception e) {
       System.out.println(e.getClass());

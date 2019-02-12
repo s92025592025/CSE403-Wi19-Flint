@@ -17,6 +17,8 @@
 */.idea/**/dictionaries
 */.idea/**/shelf
 .vscode
+**/.classpath
+**/.project
 
 # Generated files
 */.idea/**/contentModel.xml
