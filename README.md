@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/s92025592025/CSE403-Wi19-Flint.svg?branch=master)](https://travis-ci.com/s92025592025/CSE403-Wi19-Flint)
 
-# Table Of Contents
+## Table Of Contents
 
 * [Quick Start](#quick-start)
 * [Introduction](#introduction)
@@ -15,7 +15,7 @@
 * [Configuring FlintConfig403](#configuring-flintconfig403)
 * [Creating New Rules](#creating-new-rules)
 
-## Quick Start
+### Quick Start
 
 First, download and unzip our distribution repository: [`Flint-CLI-Distribution`](https://github.com/elliottdebruin/Flint-CLI-Distribution/archive/master.zip). This folder contains all the files you need to get Flint running.
 
@@ -28,19 +28,19 @@ Where:
 * `$(CONFIG_PATH)` is the path to the directory containing `FlintConfig403.class`  
 * `$(FILE_PATH)` is the path to the file you want to run Flint on
 
-## Introduction
+### Introduction
 
 Flint is a programmable style and documentation linter for Java. Flint can be used as a CLI tool as well as a plugin for IntelliJ IDEA. Using Flint as a CLI tool you can configure Flint to run style checking rules on a provided Java file and it will output error messages for any rule failures in your Java file. Using the IDE plugin version of Flint you are able to have Flint run on a Java file every time the file is saved. Flint comes with a set of premade rules and also allows you to create and customize your own rules. All rules you want to be run and when you want them to be run can be configured using a Flint configuration file.
-## Installing Flint
+### Installing Flint
 
-### CLI Adapter
+#### CLI Adapter
 
 Download and unzip our distribution repository:  [`Flint-CLI-Distribution`](https://github.com/elliottdebruin/Flint-CLI-Distribution/archive/master.zip). This folder contains all the files you need to get Flint running.
 
 *OPTIONAL:*
 If you would like, you can alias the `flint.sh` file on Unix or add the directory containing `flint.bat` to your `PATH` for Windows.
 
-### IntelliJ IDEA Plugin
+#### IntelliJ IDEA Plugin
 1. In IntelliJ IDEA go to `Settings/Preferences` > `Plugins`
 2. Click the `Install JetBrains plugin`
 3. In the dialog that opens, search for `Flint-403`
@@ -52,12 +52,12 @@ After these five steps you will have Flint installed and running on your Intelli
 6. Download the skeleton configuration class, `FlintConfig403.java`
 7. Put `FlintConfig403.java` in the root directory of your project
 
-### Requirements
+#### Requirements
 * [Java 8 or lower](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) (No Java 11)
 
-## Running Flint
+### Running Flint
 
-### CLI Adapter
+#### CLI Adapter
 
 We have provided a shell script named `flint.sh` for users using Unix terminals and named `flint.bat` for users using Windows. In order for the script to find how to run flint, ensure that `flint-0.1.3.jar` is in the same directory as `flint.sh`/`flint.bat`. If `flint-0.1.3.jar` is not in the same directory, the following output will show
 ```bash
@@ -80,7 +80,7 @@ Where:
 * `$(CLASS_NAME)` is name of the configuration class
 * `$(FILE_PATH)` is the path to the file you want to run Flint on
 
-### IntelliJ IDEA Plugin
+#### IntelliJ IDEA Plugin
 
 To run Flint with Intellij, once you have it installed click the Flint icon in the Intellij IDEA toolbar and choose either “Run Flint” or “Run Flint on file save”.
 
@@ -89,7 +89,7 @@ Clicking “Run Flint” will run Flint once using the configuration file in the
 Clicking “Run Flint on file save” will run Flint using the configuration file in the root directory of your project on the currently open file each time it is saved.
 
 
-## Configuring FlintConfig403
+### Configuring FlintConfig403
 When using Flint, you have full control over what checks to run on your Java files and how to run them. This behavior is defined in the configuration file. Once you have the `FlintConfig403.java` file downloaded you will see that it comes with a set of premade rules that are already enabled and ready to run on your Java files:
 
 ```java
@@ -113,7 +113,7 @@ If you are using the CLI version of Flint, once you are done editing use the fol
 javac $(CONFIG_JAVA_PATH)
 ```
 
-## Creating New Rules
+### Creating New Rules
 
 When writing new rules we recommend creating a new rule class and then importing and adding it to your `FlintConfig403.java` file. You have the option to create new rules directly in your `FlintConfig403.java` file, however creating new rules in separate files will help you easily manage your configuration file and keep it clean and readable.
 
