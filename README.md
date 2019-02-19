@@ -6,7 +6,7 @@ Older Project CI
 
 Remade Project CI
 
-[![Build Status](https://travis-ci.com/s92025592025/checkstyle-idea.svg?branch=break-ci)](https://travis-ci.com/s92025592025/checkstyle-idea)
+[![Build Status](https://travis-ci.com/s92025592025/checkstyle-idea.svg?branch=master)](https://travis-ci.com/s92025592025/checkstyle-idea)
 
 ## Table Of Contents
 
