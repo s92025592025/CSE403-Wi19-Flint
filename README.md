@@ -1,6 +1,12 @@
 # Flint --- A  Programmable Style Linter for Java
 
+Older Project CI
+
 [![Build Status](https://travis-ci.com/s92025592025/CSE403-Wi19-Flint.svg?branch=master)](https://travis-ci.com/s92025592025/CSE403-Wi19-Flint)
+
+Remade Project CI
+
+[![Build Status](https://travis-ci.com/s92025592025/checkstyle-idea.svg?branch=break-ci)](https://travis-ci.com/s92025592025/checkstyle-idea)
 
 ## Table Of Contents
 
